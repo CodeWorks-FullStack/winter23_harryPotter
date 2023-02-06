@@ -21,4 +21,16 @@ export class Character {
     this.staff = data.hogwartsStaff
   }
 
+
+  get CharacterCard() {
+    return /*html*/`
+      <div class="card">
+        <img src="${this.image}" alt="">
+        <div class="card-body">
+          <p><b>${this.name}</b></p>
+        </div>
+      </div>
+    `
+  }
+
 }
