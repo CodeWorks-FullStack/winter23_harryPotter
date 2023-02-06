@@ -4,6 +4,6 @@
 // REVIEW step 2 setup your needed api's... 😉
 // @ts-ignore
 export const hp_api = axios.create({
-  baseURL: 'https://hp-api.onrender.com',
+  baseURL: 'https://hp-api.onrender.com/',
   timeout: 2500
 })

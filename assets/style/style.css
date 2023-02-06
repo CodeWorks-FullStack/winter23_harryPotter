@@ -1,1 +1,10 @@
 /* BASIC STYLES HERE */
+
+.dead img{
+  filter: grayscale(1);
+  transform: rotateX(180deg);
+}
+.dead p b{
+  filter: grayscale(0);
+  color: red !important;
+}

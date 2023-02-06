@@ -23,13 +23,31 @@ export class Character {
 
   get CharacterCard() {
     return /*html*/`
-      <div class="card">
-        <img src="${this.image}" alt="">
-        <div class="card-body">
-          <p><b>${this.name}</b></p>
+    <div class="col-md-3 my-3">
+        <div class="card ${this.alive ? 'living' : 'dead'} " >
+          <img src="${this.image}" alt="">
+          <div class="card-body">
+            <p><b>${this.name}</b> ${this.alive ? this.HouseIcon : '🪦'}</p>
+          </div>
         </div>
-      </div>
+    </div>
     `
+  }
+
+
+  get HouseIcon() {
+    switch (this.house) {
+      case 'Hufflepuff':
+        return '🦡'
+      case 'Slytherin':
+        return '🐍'
+      case 'Ravenclaw':
+        return '🐧'
+      case 'Gryffindor':
+        return '🦁'
+      default:
+        return '🍺'
+    }
   }
 
 }
