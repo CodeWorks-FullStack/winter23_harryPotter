@@ -6,7 +6,6 @@ export class Character {
     // this is my side
     // data is the api side
     // aka I have no control of the data side
-
     this.id = data.id
     this.name = data.name
     this.house = data.house
